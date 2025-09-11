@@ -60,7 +60,7 @@ jobs:
       with:
         access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
         secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        registry: ${{ secrets.REGISTRY }}
+        registry: 156041429899.dkr.ecr.us-east-2.amazonaws.com #REGISTRY SECRET BUG
         repo: ${{ secrets.ECR_REPOSITORY }}
         region: ${{ secrets.AWS_REGION }}
         tags: latest,${{ github.run_number }}
